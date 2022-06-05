@@ -9,6 +9,7 @@ function getinputs(){
     amount.push(document.getElementById("InputConsumo").value);
     personas = personas + 1;
     montototal = montototal + parseFloat(consumo);
+    console.log(personas)
 }
 
 function dividir(montototal, personas){
@@ -19,6 +20,10 @@ function resultado() {
     display = "A cada uno le toca aportar $" + total.value;
     document.getElementById("aporte").innerText = display;
 }
+
+//function lista(){
+   // document.getElementById("listado").innerText = 
+//}
 
 function resolver() {
     getinputs();

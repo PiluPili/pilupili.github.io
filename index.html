@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>App de gastos</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1 class="text-center">App de gastos</h1>
+        <h2 class="text-center">Ingresa cuánto gastó cada persona</h2>
+    </div>
+    <div class="container">
+        <form name="formulariopers">
+            <div class="mb-3 mt-3">
+            <label for="InputNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="InputNombre">
+            </div>
+            <div class="mb-3">
+            <label for="InputConsumo" class="form-label">Monto que consumió</label>
+            <input type="number" class="form-control" id="InputConsumo">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="resolver()">Enviar</button>
+        </form>
+    </div>
+    <div class="Listado">
+
+    </div>
+    <div class="resultados mb-3 mt-3 text-center" id="aporte">
+       A cada uno le toca aportar:
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

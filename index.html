@@ -7,6 +7,7 @@
     <link href="./bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilo.css">
     <title>App de gastos</title>
+    <script src="https://kit.fontawesome.com/8b21751fcc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="titulo">
@@ -16,22 +17,23 @@
     <div class="container">
         <form name="formulariopers">
             <div class="mb-3 mt-3">
-            <label for="InputNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="InputNombre">
+            <label for="InputNombre" class="form-label"><i class="fa-solid fa-person"></i> Nombre</label>
+            <input type="text" class="form-control" id="InputNombre" placeholder="Completá el nombre">
             </div>
             <div class="mb-3">
-            <label for="InputConsumo" class="form-label">Monto que consumió</label>
-            <input type="number" class="form-control" id="InputConsumo">
+            <label for="InputConsumo" class="form-label"><i class="fa-solid fa-sack-dollar"></i> Monto que consumió</label>
+            <input type="number" class="form-control" id="InputConsumo" placeholder="Cuánto gastó">
             </div>
-            <button type="submit" class="btn btn-primary" onclick="resolver()">Enviar</button>
+            <button type="button" class="btn btn-primary" onclick="resolver()">Enviar</button>
         </form>
     </div>
     <div>
-        <li id="Listado"></li>
+        <div id="Listado" class="list-group mb-3 mt-3 text-center"> </div>
     </div>
+    
     <div class="resultados mb-3 mt-3 text-center">
-       A cada uno le toca aportar: <span id="aporte"></span>
+       <b><i class="fa-solid fa-comments-dollar"></i> A cada uno le toca aportar: $ <span id="aporte"></span></b>
     </div>
-    <script src="javascript.js"></script>
+    <script src="./javascript.js"></script>
 </body>
 </html>

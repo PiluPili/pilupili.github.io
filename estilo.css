@@ -8,3 +8,16 @@
     padding-top: 10px;
     padding-bottom: 10px 
 }
+
+.btn{
+    color: rgb(238, 238, 238);
+    background-color: rgb(21, 122, 122);
+    border-color:rgb(9, 131, 131);
+}
+
+.btn-primary:hover {
+    color: #212529;
+    background-color: #52bebe;
+    border-color: #8ad3d3
+}
+
